@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: deep-claude
+  mvc:
+    view:
+      suffix: .html
+      prefix: /
+    static-path-pattern: /**
+  web:
+    resources:
+      static-locations: classpath:/static/
+      add-mappings: true
+
+ai:
+  model:
+    deepseek:
+      name: deepseek-r1
+      key: sk-**
+      url: https://**/v1/chat/completions
+    claude:
+      name: claude-3-5-sonnet-20240620
+      key: sk-**
+      url: https://**/v1/chat/completions
